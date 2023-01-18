@@ -10,14 +10,16 @@
 		1B788615458FF96C9CD39DCD /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632A8F57B2234812CCDD5FD5 /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework */; };
 		3F9A638A29771EE800C3CAEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638929771EE800C3CAEE /* AppDelegate.swift */; };
 		3F9A638C29771EE800C3CAEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */; };
-		3F9A638E29771EE800C3CAEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638D29771EE800C3CAEE /* ViewController.swift */; };
-		3F9A639129771EE800C3CAEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A638F29771EE800C3CAEE /* Main.storyboard */; };
+		3F9A638E29771EE800C3CAEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638D29771EE800C3CAEE /* HomeViewController.swift */; };
 		3F9A639429771EE800C3CAEE /* AppChuckNorris.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A639229771EE800C3CAEE /* AppChuckNorris.xcdatamodeld */; };
 		3F9A639629771EEA00C3CAEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A639529771EEA00C3CAEE /* Assets.xcassets */; };
 		3F9A639929771EEA00C3CAEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A639729771EEA00C3CAEE /* LaunchScreen.storyboard */; };
 		3F9A63A429771EEA00C3CAEE /* AppChuckNorrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A63A329771EEA00C3CAEE /* AppChuckNorrisTests.swift */; };
 		3F9A63AE29771EEA00C3CAEE /* AppChuckNorrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A63AD29771EEA00C3CAEE /* AppChuckNorrisUITests.swift */; };
 		3F9A63B029771EEA00C3CAEE /* AppChuckNorrisUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A63AF29771EEA00C3CAEE /* AppChuckNorrisUITestsLaunchTests.swift */; };
+		3F9A63BE297728D600C3CAEE /* GenericService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A63BD297728D600C3CAEE /* GenericService.swift */; };
+		3F9A63C02977290A00C3CAEE /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A63BF2977290A00C3CAEE /* HomeService.swift */; };
+		3F9A63C52977310B00C3CAEE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A63C42977310B00C3CAEE /* HomeViewModel.swift */; };
 		839E3DC4056F2EF90C0ED94D /* Pods_AppChuckNorrisTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEBB102C88FC20F799BE9063 /* Pods_AppChuckNorrisTests.framework */; };
 		A8085E7D1D375FBABB8A5F00 /* Pods_AppChuckNorris.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BF1B9D0C92980285D7258E /* Pods_AppChuckNorris.framework */; };
 /* End PBXBuildFile section */
@@ -44,8 +46,7 @@
 		3F9A638629771EE800C3CAEE /* AppChuckNorris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChuckNorris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9A638929771EE800C3CAEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F9A638D29771EE800C3CAEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F9A639029771EE800C3CAEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F9A638D29771EE800C3CAEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		3F9A639329771EE800C3CAEE /* AppChuckNorris.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppChuckNorris.xcdatamodel; sourceTree = "<group>"; };
 		3F9A639529771EEA00C3CAEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F9A639829771EEA00C3CAEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,6 +56,9 @@
 		3F9A63A929771EEA00C3CAEE /* AppChuckNorrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppChuckNorrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9A63AD29771EEA00C3CAEE /* AppChuckNorrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChuckNorrisUITests.swift; sourceTree = "<group>"; };
 		3F9A63AF29771EEA00C3CAEE /* AppChuckNorrisUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppChuckNorrisUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F9A63BD297728D600C3CAEE /* GenericService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericService.swift; sourceTree = "<group>"; };
+		3F9A63BF2977290A00C3CAEE /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		3F9A63C42977310B00C3CAEE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		632A8F57B2234812CCDD5FD5 /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppChuckNorris_AppChuckNorrisUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		70329544422424C9DDF5D778 /* Pods-AppChuckNorrisTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckNorrisTests.debug.xcconfig"; path = "Target Support Files/Pods-AppChuckNorrisTests/Pods-AppChuckNorrisTests.debug.xcconfig"; sourceTree = "<group>"; };
 		70A6367D279A7022093A1664 /* Pods-AppChuckNorris.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckNorris.release.xcconfig"; path = "Target Support Files/Pods-AppChuckNorris/Pods-AppChuckNorris.release.xcconfig"; sourceTree = "<group>"; };
@@ -118,10 +122,12 @@
 		3F9A638829771EE800C3CAEE /* AppChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
+				3F9A63C3297730CE00C3CAEE /* Model */,
+				3F9A63C2297730C100C3CAEE /* View */,
+				3F9A63C1297730AE00C3CAEE /* ViewModel */,
+				3F9A63BC2977288100C3CAEE /* HomeService */,
 				3F9A638929771EE800C3CAEE /* AppDelegate.swift */,
 				3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */,
-				3F9A638D29771EE800C3CAEE /* ViewController.swift */,
-				3F9A638F29771EE800C3CAEE /* Main.storyboard */,
 				3F9A639529771EEA00C3CAEE /* Assets.xcassets */,
 				3F9A639729771EEA00C3CAEE /* LaunchScreen.storyboard */,
 				3F9A639A29771EEA00C3CAEE /* Info.plist */,
@@ -147,6 +153,38 @@
 			path = AppChuckNorrisUITests;
 			sourceTree = "<group>";
 		};
+		3F9A63BC2977288100C3CAEE /* HomeService */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A63BD297728D600C3CAEE /* GenericService.swift */,
+				3F9A63BF2977290A00C3CAEE /* HomeService.swift */,
+			);
+			path = HomeService;
+			sourceTree = "<group>";
+		};
+		3F9A63C1297730AE00C3CAEE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A63C42977310B00C3CAEE /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3F9A63C2297730C100C3CAEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A638D29771EE800C3CAEE /* HomeViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3F9A63C3297730CE00C3CAEE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		5ECDFA6213F7592E0FD97DFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -167,7 +205,6 @@
 				70329544422424C9DDF5D778 /* Pods-AppChuckNorrisTests.debug.xcconfig */,
 				E304EA347BF18BFA81C42EE3 /* Pods-AppChuckNorrisTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -282,7 +319,6 @@
 			files = (
 				3F9A639929771EEA00C3CAEE /* LaunchScreen.storyboard in Resources */,
 				3F9A639629771EEA00C3CAEE /* Assets.xcassets in Resources */,
-				3F9A639129771EE800C3CAEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,9 +446,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F9A638E29771EE800C3CAEE /* ViewController.swift in Sources */,
+				3F9A63C02977290A00C3CAEE /* HomeService.swift in Sources */,
+				3F9A638E29771EE800C3CAEE /* HomeViewController.swift in Sources */,
+				3F9A63C52977310B00C3CAEE /* HomeViewModel.swift in Sources */,
 				3F9A638A29771EE800C3CAEE /* AppDelegate.swift in Sources */,
 				3F9A638C29771EE800C3CAEE /* SceneDelegate.swift in Sources */,
+				3F9A63BE297728D600C3CAEE /* GenericService.swift in Sources */,
 				3F9A639429771EE800C3CAEE /* AppChuckNorris.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,14 +489,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3F9A638F29771EE800C3CAEE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F9A639029771EE800C3CAEE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F9A639729771EEA00C3CAEE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -595,7 +626,6 @@
 				INFOPLIST_FILE = AppChuckNorris/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -623,7 +653,6 @@
 				INFOPLIST_FILE = AppChuckNorris/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
