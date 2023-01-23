@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B788615458FF96C9CD39DCD /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632A8F57B2234812CCDD5FD5 /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework */; };
+		3F4F48BB297EC7A100F4E533 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F48BA297EC7A100F4E533 /* HomeScreen.swift */; };
 		3F9A638A29771EE800C3CAEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638929771EE800C3CAEE /* AppDelegate.swift */; };
 		3F9A638C29771EE800C3CAEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */; };
 		3F9A638E29771EE800C3CAEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638D29771EE800C3CAEE /* HomeViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		2E3E89B797D31269DD5E3930 /* Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig"; path = "Target Support Files/Pods-AppChuckNorris-AppChuckNorrisUITests/Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F4F48BA297EC7A100F4E533 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3F9A638629771EE800C3CAEE /* AppChuckNorris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChuckNorris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9A638929771EE800C3CAEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F4F48B8297EC6DD00F4E533 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A63C2297730C100C3CAEE /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		3F4F48B9297EC75600F4E533 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3F4F48BA297EC7A100F4E533 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
 		3F9A637D29771EE800C3CAEE = {
 			isa = PBXGroup;
 			children = (
@@ -122,9 +140,8 @@
 		3F9A638829771EE800C3CAEE /* AppChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
+				3F4F48B8297EC6DD00F4E533 /* Feature */,
 				3F9A63C3297730CE00C3CAEE /* Model */,
-				3F9A63C2297730C100C3CAEE /* View */,
-				3F9A63C1297730AE00C3CAEE /* ViewModel */,
 				3F9A63BC2977288100C3CAEE /* HomeService */,
 				3F9A638929771EE800C3CAEE /* AppDelegate.swift */,
 				3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */,
@@ -170,12 +187,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		3F9A63C2297730C100C3CAEE /* View */ = {
+		3F9A63C2297730C100C3CAEE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3F4F48B9297EC75600F4E533 /* Screen */,
+				3F9A63C1297730AE00C3CAEE /* ViewModel */,
 				3F9A638D29771EE800C3CAEE /* HomeViewController.swift */,
 			);
-			path = View;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		3F9A63C3297730CE00C3CAEE /* Model */ = {
@@ -450,6 +469,7 @@
 				3F9A638E29771EE800C3CAEE /* HomeViewController.swift in Sources */,
 				3F9A63C52977310B00C3CAEE /* HomeViewModel.swift in Sources */,
 				3F9A638A29771EE800C3CAEE /* AppDelegate.swift in Sources */,
+				3F4F48BB297EC7A100F4E533 /* HomeScreen.swift in Sources */,
 				3F9A638C29771EE800C3CAEE /* SceneDelegate.swift in Sources */,
 				3F9A63BE297728D600C3CAEE /* GenericService.swift in Sources */,
 				3F9A639429771EE800C3CAEE /* AppChuckNorris.xcdatamodeld in Sources */,
