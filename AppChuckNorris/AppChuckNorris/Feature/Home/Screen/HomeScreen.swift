@@ -12,12 +12,14 @@ class HomeScreen: UIView {
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.register(CategoryTableViewCell.self, forCellReuseIdentifier: CategoryTableViewCell.identifier)
         tableView.separatorStyle = .none
         return tableView
     }()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
+        backgroundColor = .white
         self.addSubView()
         self.configConstraints()
     }
@@ -33,6 +35,7 @@ class HomeScreen: UIView {
     public func congigTableViewProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource){
         self.tableView.delegate = delegate
         self.tableView.dataSource = dataSource
+        self.tableView.reloadData()
     }
     
     private func configConstraints(){

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1B788615458FF96C9CD39DCD /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632A8F57B2234812CCDD5FD5 /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework */; };
 		3F4F48BB297EC7A100F4E533 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F48BA297EC7A100F4E533 /* HomeScreen.swift */; };
+		3F4F48BD297ED3C200F4E533 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F48BC297ED3C200F4E533 /* Category.swift */; };
+		3F4F48C2297EDFA700F4E533 /* CategoryTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F48C1297EDFA700F4E533 /* CategoryTableViewCellScreen.swift */; };
+		3F4F48C4297EDFC000F4E533 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F48C3297EDFC000F4E533 /* CategoryTableViewCell.swift */; };
 		3F9A638A29771EE800C3CAEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638929771EE800C3CAEE /* AppDelegate.swift */; };
 		3F9A638C29771EE800C3CAEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */; };
 		3F9A638E29771EE800C3CAEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F9A638D29771EE800C3CAEE /* HomeViewController.swift */; };
@@ -45,6 +48,9 @@
 /* Begin PBXFileReference section */
 		2E3E89B797D31269DD5E3930 /* Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig"; path = "Target Support Files/Pods-AppChuckNorris-AppChuckNorrisUITests/Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3F4F48BA297EC7A100F4E533 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		3F4F48BC297ED3C200F4E533 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		3F4F48C1297EDFA700F4E533 /* CategoryTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCellScreen.swift; sourceTree = "<group>"; };
+		3F4F48C3297EDFC000F4E533 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		3F9A638629771EE800C3CAEE /* AppChuckNorris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppChuckNorris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F9A638929771EE800C3CAEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				3F9A63C2297730C100C3CAEE /* Home */,
+				3F4F48BE297EDEFF00F4E533 /* Cell */,
 			);
 			path = Feature;
 			sourceTree = "<group>";
@@ -111,6 +118,31 @@
 			isa = PBXGroup;
 			children = (
 				3F4F48BA297EC7A100F4E533 /* HomeScreen.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		3F4F48BE297EDEFF00F4E533 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3F4F48BF297EDF4D00F4E533 /* CategoryTableViewCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3F4F48BF297EDF4D00F4E533 /* CategoryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3F4F48C0297EDF6100F4E533 /* Screen */,
+				3F4F48C3297EDFC000F4E533 /* CategoryTableViewCell.swift */,
+			);
+			path = CategoryTableViewCell;
+			sourceTree = "<group>";
+		};
+		3F4F48C0297EDF6100F4E533 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3F4F48C1297EDFA700F4E533 /* CategoryTableViewCellScreen.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -200,6 +232,7 @@
 		3F9A63C3297730CE00C3CAEE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3F4F48BC297ED3C200F4E533 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -468,8 +501,11 @@
 				3F9A63C02977290A00C3CAEE /* HomeService.swift in Sources */,
 				3F9A638E29771EE800C3CAEE /* HomeViewController.swift in Sources */,
 				3F9A63C52977310B00C3CAEE /* HomeViewModel.swift in Sources */,
+				3F4F48C2297EDFA700F4E533 /* CategoryTableViewCellScreen.swift in Sources */,
 				3F9A638A29771EE800C3CAEE /* AppDelegate.swift in Sources */,
 				3F4F48BB297EC7A100F4E533 /* HomeScreen.swift in Sources */,
+				3F4F48C4297EDFC000F4E533 /* CategoryTableViewCell.swift in Sources */,
+				3F4F48BD297ED3C200F4E533 /* Category.swift in Sources */,
 				3F9A638C29771EE800C3CAEE /* SceneDelegate.swift in Sources */,
 				3F9A63BE297728D600C3CAEE /* GenericService.swift in Sources */,
 				3F9A639429771EE800C3CAEE /* AppChuckNorris.xcdatamodeld in Sources */,
