@@ -27,7 +27,6 @@ class HomeViewController: UIViewController {
 extension HomeViewController: HomeViewModelProtocol{
     func success() {
         self.screen?.congigTableViewProtocols(delegate: self, dataSource: self)
-        print("Deu Bom")
     }
 
     func error() {
