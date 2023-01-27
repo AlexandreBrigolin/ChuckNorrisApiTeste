@@ -33,7 +33,12 @@ extension HomeViewController: HomeViewModelProtocol{
         print("Deu Ruim!")
     }
 }
-extension HomeViewController: UITableViewDelegate{}
+extension HomeViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+        print(viewModel.loadCurrentCategory(indexPatch: indexPath))
+    }
+}
 
 extension HomeViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
