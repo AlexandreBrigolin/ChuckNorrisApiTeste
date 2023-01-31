@@ -125,6 +125,22 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		3F3F841929898508009ABC59 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				3F4F49912982CC0200F4E533 /* JokeViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		3F3F841A29898528009ABC59 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A638D29771EE800C3CAEE /* HomeViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		3F4F48B8297EC6DD00F4E533 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,7 +194,7 @@
 		3F4F498D2982CB8C00F4E533 /* Joke */ = {
 			isa = PBXGroup;
 			children = (
-				3F4F49912982CC0200F4E533 /* JokeViewController.swift */,
+				3F3F841929898508009ABC59 /* VC */,
 				3F4F498E2982CBB600F4E533 /* Screen */,
 				3F4F49932982D0D800F4E533 /* ViewModel */,
 			);
@@ -268,7 +284,7 @@
 		3F9A63C2297730C100C3CAEE /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				3F9A638D29771EE800C3CAEE /* HomeViewController.swift */,
+				3F3F841A29898528009ABC59 /* VC */,
 				3F4F48B9297EC75600F4E533 /* Screen */,
 				3F9A63C1297730AE00C3CAEE /* ViewModel */,
 			);

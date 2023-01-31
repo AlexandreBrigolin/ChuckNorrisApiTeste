@@ -32,7 +32,7 @@ class HomeScreen: UIView {
         self.addSubview(tableView)
     }
     
-    public func congigTableViewProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource){
+    public func configTableViewProtocols(delegate: UITableViewDelegate, dataSource: UITableViewDataSource){
         self.tableView.delegate = delegate
         self.tableView.dataSource = dataSource
         self.tableView.reloadData()

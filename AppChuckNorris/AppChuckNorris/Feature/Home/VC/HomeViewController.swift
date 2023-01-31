@@ -20,13 +20,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.delegate(delegate: self)
-        viewModel.fathRequest()
+        viewModel.fethRequest()
     }
 }
 
 extension HomeViewController: HomeViewModelProtocol{
     func success() {
-        self.screen?.congigTableViewProtocols(delegate: self, dataSource: self)
+        self.screen?.configTableViewProtocols(delegate: self, dataSource: self)
     }
 
     func error() {
@@ -37,6 +37,10 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         print(viewModel.loadCurrentCategory(indexPatch: indexPath))
+        
+        let vc = JokeViewController(category: viewModel.loadCurrentCategory(indexPatch: indexPath))
+        present(vc, animated: true)
+        
     }
 }
 

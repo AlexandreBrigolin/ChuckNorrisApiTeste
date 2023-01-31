@@ -14,7 +14,7 @@ protocol JokeServiceProtocoll: GenericService {
 
 class JokeService: JokeServiceProtocoll {
     func getJoke(category: Category, completion: @escaping completion<JokesModel?>) {
-        let url: String = "https://api.chucknorris.io/jokes/random?category=history" + category
+        let url: String = "https://api.chucknorris.io/jokes/random?category=\(category)"
         
         AF.request(url, method: .get).validate().responseDecodable(of: JokesModel.self) { response in
             print(#function)

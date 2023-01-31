@@ -22,7 +22,7 @@ class HomeViewModel {
         self.delegate = delegate
     }
     
-    func fathRequest(){
+    func fethRequest(){
         service.getHome { result, failure in
             if let result = result {
                 self.categoryList = result

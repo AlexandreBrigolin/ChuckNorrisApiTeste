@@ -19,10 +19,10 @@ class JokeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        viewModel.fethRequest()
     }
     
-    required init(category: Category){
+    required init(category: Category) {
         self.viewModel = JokeViewModel(category: category)
         super.init(nibName: nil, bundle: nil)
     }

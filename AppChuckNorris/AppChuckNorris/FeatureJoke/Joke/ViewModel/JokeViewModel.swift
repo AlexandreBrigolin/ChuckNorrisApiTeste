@@ -7,12 +7,18 @@
 
 import UIKit
 
+protocol JokeViewModelProtocol: AnyObject {
+    func success()
+    func error()
+}
+
 class JokeViewModel {
 
     var category: Category
-    var service: JokeService = JokeService()
-    var jokeData: JokesModel = JokesModel()
-    
+    private var service: JokeService = JokeService()
+    private var jokeData: JokesModel = JokesModel()
+    private weak var delegate: JokeViewModelProtocol?
+
     init(category: Category) {
         self.category = category
     }
@@ -27,4 +33,7 @@ class JokeViewModel {
             }
         }
     }
+    
+  
+    
 }
