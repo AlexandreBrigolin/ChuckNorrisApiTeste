@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		1B788615458FF96C9CD39DCD /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632A8F57B2234812CCDD5FD5 /* Pods_AppChuckNorris_AppChuckNorrisUITests.framework */; };
+		3F3F84102989290D009ABC59 /* JokesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F840F2989290D009ABC59 /* JokesModel.swift */; };
+		3F3F841329892BCE009ABC59 /* JokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3F841229892BCE009ABC59 /* JokeService.swift */; };
 		3F4F48BB297EC7A100F4E533 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F48BA297EC7A100F4E533 /* HomeScreen.swift */; };
 		3F4F48BD297ED3C200F4E533 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F48BC297ED3C200F4E533 /* Category.swift */; };
 		3F4F48C2297EDFA700F4E533 /* CategoryTableViewCellScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4F48C1297EDFA700F4E533 /* CategoryTableViewCellScreen.swift */; };
@@ -50,6 +52,8 @@
 
 /* Begin PBXFileReference section */
 		2E3E89B797D31269DD5E3930 /* Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig"; path = "Target Support Files/Pods-AppChuckNorris-AppChuckNorrisUITests/Pods-AppChuckNorris-AppChuckNorrisUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3F3F840F2989290D009ABC59 /* JokesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokesModel.swift; sourceTree = "<group>"; };
+		3F3F841229892BCE009ABC59 /* JokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeService.swift; sourceTree = "<group>"; };
 		3F4F48BA297EC7A100F4E533 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3F4F48BC297ED3C200F4E533 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		3F4F48C1297EDFA700F4E533 /* CategoryTableViewCellScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCellScreen.swift; sourceTree = "<group>"; };
@@ -111,6 +115,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F3F8411298929D6009ABC59 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A63BD297728D600C3CAEE /* GenericService.swift */,
+				3F9A63BF2977290A00C3CAEE /* HomeService.swift */,
+				3F3F841229892BCE009ABC59 /* JokeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		3F4F48B8297EC6DD00F4E533 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,10 +226,10 @@
 		3F9A638829771EE800C3CAEE /* AppChuckNorris */ = {
 			isa = PBXGroup;
 			children = (
+				3F3F8411298929D6009ABC59 /* Service */,
 				3F4F498C2982CB6C00F4E533 /* FeatureJoke */,
 				3F4F48B8297EC6DD00F4E533 /* Feature */,
 				3F9A63C3297730CE00C3CAEE /* Model */,
-				3F9A63BC2977288100C3CAEE /* HomeService */,
 				3F9A638929771EE800C3CAEE /* AppDelegate.swift */,
 				3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */,
 				3F9A639529771EEA00C3CAEE /* Assets.xcassets */,
@@ -243,15 +257,6 @@
 			path = AppChuckNorrisUITests;
 			sourceTree = "<group>";
 		};
-		3F9A63BC2977288100C3CAEE /* HomeService */ = {
-			isa = PBXGroup;
-			children = (
-				3F9A63BD297728D600C3CAEE /* GenericService.swift */,
-				3F9A63BF2977290A00C3CAEE /* HomeService.swift */,
-			);
-			path = HomeService;
-			sourceTree = "<group>";
-		};
 		3F9A63C1297730AE00C3CAEE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				3F4F48BC297ED3C200F4E533 /* Category.swift */,
+				3F3F840F2989290D009ABC59 /* JokesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -542,8 +548,10 @@
 				3F9A63C02977290A00C3CAEE /* HomeService.swift in Sources */,
 				3F4F49902982CBEC00F4E533 /* JokeViewControllerScreen.swift in Sources */,
 				3F9A638E29771EE800C3CAEE /* HomeViewController.swift in Sources */,
+				3F3F84102989290D009ABC59 /* JokesModel.swift in Sources */,
 				3F4F49952982EC6F00F4E533 /* JokeViewModel.swift in Sources */,
 				3F9A63C52977310B00C3CAEE /* HomeViewModel.swift in Sources */,
+				3F3F841329892BCE009ABC59 /* JokeService.swift in Sources */,
 				3F4F48C2297EDFA700F4E533 /* CategoryTableViewCellScreen.swift in Sources */,
 				3F9A638A29771EE800C3CAEE /* AppDelegate.swift in Sources */,
 				3F4F48BB297EC7A100F4E533 /* HomeScreen.swift in Sources */,
