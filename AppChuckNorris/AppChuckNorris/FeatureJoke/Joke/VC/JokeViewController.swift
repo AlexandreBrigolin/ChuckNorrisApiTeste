@@ -8,7 +8,7 @@
 import UIKit
 
 class JokeViewController: UIViewController {
-
+    
     var screen: JokeViewControllerScreen = JokeViewControllerScreen()
     var viewModel: JokeViewModel
     
@@ -19,10 +19,11 @@ class JokeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.screen.delegate(delegate: self)
         self.viewModel.delegate(delegate: self)
         viewModel.fethRequest()
     }
-
+    
     
     required init(category: Category) {
         self.viewModel = JokeViewModel(category: category)
@@ -35,14 +36,19 @@ class JokeViewController: UIViewController {
     
 }
 
+extension JokeViewController: JokeViewControllerScreenProtocoll {
+    func returnButton() {
+        dismiss(animated: true)
+    }
+}
+
 extension JokeViewController: JokeViewModelProtocol {
     func success() {
-        self.screen.jokeLabel.text = viewModel.joke
+        self.screen.jokeLabel.text = viewModel.jokeResult
     }
     
     func error() {
         print("Deu Ruim")
     }
-    
     
 }

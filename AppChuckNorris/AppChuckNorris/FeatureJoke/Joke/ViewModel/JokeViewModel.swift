@@ -13,12 +13,12 @@ protocol JokeViewModelProtocol: AnyObject {
 }
 
 class JokeViewModel {
-
+    
     var category: Category
     private var service: JokeService = JokeService()
     private var jokeData: JokesModel = JokesModel()
     private weak var delegate: JokeViewModelProtocol?
-
+    
     public func delegate(delegate: JokeViewModelProtocol?) {
         self.delegate = delegate
     }
@@ -40,7 +40,7 @@ class JokeViewModel {
     }
     
     
-    public var joke: String {
+    public var jokeResult: String {
         return jokeData.value ?? ""
     }
     

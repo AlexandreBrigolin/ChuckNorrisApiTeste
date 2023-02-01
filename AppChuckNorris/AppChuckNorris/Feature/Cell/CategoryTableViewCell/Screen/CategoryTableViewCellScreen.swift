@@ -8,7 +8,7 @@
 import UIKit
 
 class CategoryTableViewCellScreen: UIView {
-
+    
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -41,16 +41,15 @@ class CategoryTableViewCellScreen: UIView {
         self.addSubview(enterLabel)
     }
     
-    
     private func configConstraints(){
         NSLayoutConstraint.activate([
-        
+            
             self.titleLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 20),
             self.titleLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             
             self.enterLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -20),
             self.enterLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor)
-        
+            
         ])
     }
 }

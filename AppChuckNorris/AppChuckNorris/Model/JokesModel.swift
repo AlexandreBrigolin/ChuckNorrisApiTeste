@@ -15,7 +15,7 @@ struct JokesModel: Codable {
     var id, updatedAt: String?
     var url: String?
     var value: String?
-
+    
     enum CodingKeys: String, CodingKey {
         case categories
         case createdAt = "created_at"

@@ -9,7 +9,6 @@ import Foundation
 import Alamofire
 
 protocol HomeServiceDelegate: GenericService{
-//    func getHomefromJson(completion: @escaping completion<HomeData?>)
     func getHome(completion: @escaping completion<[String]?>)
 }
 
@@ -17,7 +16,7 @@ class HomeService: HomeServiceDelegate {
     
     func getHome(completion: @escaping completion<[String]?>){
         let url: String = "https://api.chucknorris.io/jokes/categories"
-    
+        
         AF.request(url, method: .get).validate().responseDecodable(of: [String].self) { response in
             print(#function)
             debugPrint(response)
@@ -32,17 +31,4 @@ class HomeService: HomeServiceDelegate {
             }
         }
     }
-    
-//    func getHomefromJson(completion: @escaping completion<HomeData?>) {
-//        if let url = Bundle.main.url(forResource: "data", withExtension: "json"){
-//            do {
-//                let data = try Data(contentsOf: url)
-//                let menu: HomeData = try JSONDecoder().decode(HomeData.self, from: data)
-//                completion(menu, nil)
-//            }catch {
-//                completion(nil,Error.fileDecodingFailed(name: "data", error))
-//            }
-//        }
-//    }
-    
 }

@@ -8,7 +8,7 @@
 import UIKit
 
 class HomeScreen: UIView {
-
+    
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -16,7 +16,7 @@ class HomeScreen: UIView {
         tableView.separatorStyle = .none
         return tableView
     }()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white

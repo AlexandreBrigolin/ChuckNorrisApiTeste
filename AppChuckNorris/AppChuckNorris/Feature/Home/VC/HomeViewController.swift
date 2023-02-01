@@ -28,7 +28,7 @@ extension HomeViewController: HomeViewModelProtocol{
     func success() {
         self.screen?.configTableViewProtocols(delegate: self, dataSource: self)
     }
-
+    
     func error() {
         print("Deu Ruim!")
     }
@@ -39,8 +39,8 @@ extension HomeViewController: UITableViewDelegate {
         print(viewModel.loadCurrentCategory(indexPatch: indexPath))
         
         let vc = JokeViewController(category: viewModel.loadCurrentCategory(indexPatch: indexPath))
+        vc.modalPresentationStyle = .fullScreen
         present(vc, animated: true)
-        
     }
 }
 
