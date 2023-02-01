@@ -19,6 +19,10 @@ class JokeViewModel {
     private var jokeData: JokesModel = JokesModel()
     private weak var delegate: JokeViewModelProtocol?
 
+    public func delegate(delegate: JokeViewModelProtocol?) {
+        self.delegate = delegate
+    }
+    
     init(category: Category) {
         self.category = category
     }
@@ -27,6 +31,7 @@ class JokeViewModel {
         service.getJoke(category: category) { result, failure in
             if let result = result {
                 self.jokeData = result
+                self.delegate?.success()
                 print("Deu Bom!")
             }else {
                 print("Deu Ruim!")
@@ -34,6 +39,10 @@ class JokeViewModel {
         }
     }
     
-  
+    
+    public var joke: String {
+        return jokeData.value ?? ""
+    }
+    
     
 }
