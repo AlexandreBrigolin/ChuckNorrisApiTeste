@@ -7,7 +7,6 @@
 
 import Foundation
 
-//   let jokesModel = try? JSONDecoder().decode(JokesModel.self, from: jsonData)
 // MARK: - JokesModel
 struct JokesModel: Codable {
     var categories: [String]?
