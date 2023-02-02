@@ -27,7 +27,7 @@ class JokeViewModel {
         self.category = category
     }
     
-    func fethRequest() {
+    public  func fethRequest() {
         service.getJoke(category: category) { result, failure in
             if let result = result {
                 self.jokeData = result
@@ -38,7 +38,7 @@ class JokeViewModel {
             }
         }
     }
-        
+    
     public var jokeResult: String {
         return jokeData.value ?? ""
     }
