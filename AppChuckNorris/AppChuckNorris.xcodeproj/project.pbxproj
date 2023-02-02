@@ -141,6 +141,22 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		3F3F841B298C15DE009ABC59 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A638929771EE800C3CAEE /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		3F3F841C298C15F0009ABC59 /* SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */,
+			);
+			path = SceneDelegate;
+			sourceTree = "<group>";
+		};
 		3F4F48B8297EC6DD00F4E533 /* Feature */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,8 +254,8 @@
 				3F3F8411298929D6009ABC59 /* Service */,
 				3F4F48B8297EC6DD00F4E533 /* Feature */,
 				3F9A63C3297730CE00C3CAEE /* Model */,
-				3F9A638929771EE800C3CAEE /* AppDelegate.swift */,
-				3F9A638B29771EE800C3CAEE /* SceneDelegate.swift */,
+				3F3F841B298C15DE009ABC59 /* AppDelegate */,
+				3F3F841C298C15F0009ABC59 /* SceneDelegate */,
 				3F9A639529771EEA00C3CAEE /* Assets.xcassets */,
 				3F9A639729771EEA00C3CAEE /* LaunchScreen.storyboard */,
 				3F9A639A29771EEA00C3CAEE /* Info.plist */,
