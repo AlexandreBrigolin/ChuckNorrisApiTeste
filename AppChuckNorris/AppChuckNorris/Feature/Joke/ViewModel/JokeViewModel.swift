@@ -38,11 +38,8 @@ class JokeViewModel {
             }
         }
     }
-    
-    
+        
     public var jokeResult: String {
         return jokeData.value ?? ""
     }
-    
-    
 }
